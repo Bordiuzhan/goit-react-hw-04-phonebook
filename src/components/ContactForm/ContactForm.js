@@ -1,14 +1,10 @@
-import { Component, useState } from 'react';
+import { useState } from 'react';
 import { Form, Label, Btn } from './ContactForm.styled';
 import PropTypes from 'prop-types';
 
 export const ContactForm = ({ onSubmit }) => {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
-  // state = {
-  //   name: '',
-  //   number: '',
-  // };
 
   const handleChange = e => {
     const { name, value } = e.currentTarget;
