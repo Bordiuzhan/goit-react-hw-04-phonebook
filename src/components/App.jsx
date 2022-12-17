@@ -22,7 +22,7 @@ export function App() {
 
   const addContact = (name, number) => {
     for (let contact of contacts) {
-      if (contact.name.toLowerCase().includes(name.toLowerCase())) {
+      if (contact.name.toLowerCase() === name.toLowerCase()) {
         return alert(`${name} is alredy in contacts`);
       }
     }
